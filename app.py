@@ -56,4 +56,4 @@ if __name__ == '__main__':
     # Start keep-alive thread
     threading.Thread(target=keep_alive, daemon=True).start()
 
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+    app.run()
