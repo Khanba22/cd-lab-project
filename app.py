@@ -45,7 +45,7 @@ F -> ( E ) | id"""
 def keep_alive():
     while True:
         try:
-            url = os.getenv("https://cd-lab.onrender.com")
+            url = "https://cd-lab.onrender.com"
             if url:
                 requests.get(url)
         except Exception as e:
